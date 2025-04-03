@@ -7,6 +7,10 @@ import adminRouter from './routes/adminRoute.js';
 import doctorRouter from './routes/doctorRoute.js';
 import userRouter from './routes/userRoute.js';
 
+// for deployment purpose on render.com we have changed the bcrypt(c++ version which was creating compilation issue on the deployed local system) package to bcryptjs(pure js implementation good for deployment purpose) --> so if any issue occur in running this project locally go back to bcrypt: steps below:-
+// npm uninstall bcryptjs
+// npm install bcrypt
+
 
 // app config
 const app = express()
